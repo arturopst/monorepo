@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class HelloControllerTest {
 
     @Test
-    public void alwayPassTest(){
+    public void alwaysPassTest(){
 
         assertTrue(true == true);
     }
