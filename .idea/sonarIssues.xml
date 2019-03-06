@@ -18,7 +18,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/rest2/src/main/java/com/asoto/monorepo/rest2/HelloController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/rest2/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/rest2/src/test/java/com/asoto/monorepo/rest2/HelloControllerTest.java">
           <value>
             <set />
           </value>
