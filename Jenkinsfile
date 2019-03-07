@@ -14,7 +14,7 @@ pipeline {
     stage('build') {
       steps {
         dir(path: 'rest2') {
-          sh '/mvnw clean install'
+          sh './mvnw clean install'
         }
 
       }
