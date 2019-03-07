@@ -6,9 +6,18 @@ pipeline {
         echo 'Starting pipeline'
       }
     }
-    stage('checkout') {
-      steps {
-        git(url: 'https://github.com/arturopst/monorepo.git', branch: 'master')
+    stage('checkout master') {
+      parallel {
+        stage('checkout') {
+          steps {
+            git(url: 'https://github.com/arturopst/monorepo.git', branch: 'master')
+          }
+        }
+        stage('checkout develop') {
+          steps {
+            git(url: 'https://github.com/arturopst/monorepo.git', branch: 'develop')
+          }
+        }
       }
     }
     stage('build') {
